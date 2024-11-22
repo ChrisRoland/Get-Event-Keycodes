@@ -5,7 +5,7 @@ $(window).keydown((e) => {
   const keyDisplay = `
       <div class='key'>
         ${
-        e.key === " " ? "Space" : e.key
+        e.key === " " ? e.code : e.key
       }
       <small>event.key</small></div>
       <div class='key'>${e.keyCode}<small>event.keyCode</small></div>
